@@ -41,7 +41,7 @@ def test_authenticate_user(setup_database):
     assert authenticate_user('testuser', 'password123') == True
 
 def test_authenticate_non(setup_database):
-    assert('nonuser', 'nonoassword123') == False
+    assert authenticate_user('nonuser', 'nonoassword123') == False
 
 # Возможные варианты тестов:
 """
